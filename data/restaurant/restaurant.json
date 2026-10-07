@@ -1,0 +1,12 @@
+{
+  "restaurant_id":"REST-000001",
+  "name":"Mahistra",
+  "type":"Premium South Indian restaurant",
+  "location":{"city":"Ooty","district":"Nilgiris","state":"Tamil Nadu","country":"India","timezone":"Asia/Kolkata"},
+  "experience":{"atmosphere":"Nature-inspired, elegant, calm, premium","cuisine":"Contemporary South Indian with traditional foundations"},
+  "service_model":["Dine-in","Reservations","Takeaway","Delivery"],
+  "audience":["Tourists","Families","Couples","Professionals","Premium diners"],
+  "hours":{"friday":"18:30-22:30","saturday":"18:30-22:30","sunday":"18:30-22:30"},
+  "policies":{"reservation_required_for_groups":6,"cancellation_window_hours":6,"delivery_area_km":8},
+  "contact":{"phone":"+91-00000-00000","email":"hello@example.mahistra.test","address":"Mahistra Hill Road, Ooty, Tamil Nadu, India"}
+}

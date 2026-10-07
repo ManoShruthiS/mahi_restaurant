@@ -1,0 +1,6 @@
+[
+{"loyalty_account_id":"LOY-000001","customer_id":"CUS-000001","tier":"Gold","points_balance":1480,"lifetime_points":6240,"joined_at":"2025-01-12"},
+{"loyalty_account_id":"LOY-000002","customer_id":"CUS-000002","tier":"Silver","points_balance":610,"lifetime_points":2410,"joined_at":"2025-08-18"},
+{"loyalty_account_id":"LOY-000003","customer_id":"CUS-000003","tier":"Platinum","points_balance":3240,"lifetime_points":12980,"joined_at":"2024-07-25"},
+{"loyalty_account_id":"LOY-000004","customer_id":"CUS-000005","tier":"Gold","points_balance":1120,"lifetime_points":5180,"joined_at":"2025-03-06"}
+]

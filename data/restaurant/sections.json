@@ -1,0 +1,10 @@
+[
+{"section_id":"SEC-000001","name":"Garden Terrace","capacity":16,"ambience":"Open-air botanical dining"},
+{"section_id":"SEC-000002","name":"Glasshouse","capacity":12,"ambience":"Greenhouse dining with valley light"},
+{"section_id":"SEC-000003","name":"Fireplace Room","capacity":10,"ambience":"Warm fireside intimate dining"},
+{"section_id":"SEC-000004","name":"Main Dining","capacity":20,"ambience":"Elegant central dining room"},
+{"section_id":"SEC-000005","name":"Private Dining","capacity":8,"ambience":"Private chef-led experiences"},
+{"section_id":"SEC-000006","name":"Window Lounge","capacity":12,"ambience":"Scenic window-side tables"},
+{"section_id":"SEC-000007","name":"Tea Garden","capacity":10,"ambience":"Quiet evening tea experience"},
+{"section_id":"SEC-000008","name":"Tasting Counter","capacity":6,"ambience":"Chef interaction and tasting menu"}
+]

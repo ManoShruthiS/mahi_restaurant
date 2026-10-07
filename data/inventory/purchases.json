@@ -1,0 +1,6 @@
+[
+{"purchase_id":"PUR-000001","supplier_id":"SUP-000001","purchase_date":"2026-10-07","ingredient_id":"ING-000002","quantity":40,"unit_cost":210,"total_cost":8400,"status":"received"},
+{"purchase_id":"PUR-000002","supplier_id":"SUP-000002","purchase_date":"2026-10-07","ingredient_id":"ING-000003","quantity":8,"unit_cost":720,"total_cost":5760,"status":"received"},
+{"purchase_id":"PUR-000003","supplier_id":"SUP-000006","purchase_date":"2026-10-08","ingredient_id":"ING-000008","quantity":30,"unit_cost":360,"total_cost":10800,"status":"ordered"},
+{"purchase_id":"PUR-000004","supplier_id":"SUP-000005","purchase_date":"2026-10-08","ingredient_id":"ING-000007","quantity":6,"unit_cost":820,"total_cost":4920,"status":"received"}
+]

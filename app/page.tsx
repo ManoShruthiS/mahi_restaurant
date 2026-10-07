@@ -1,129 +1,49 @@
-import { ArrowRight, CalendarDays, Leaf, MapPin, Utensils, Sparkles } from "lucide-react";
+"use client";
+import { useMemo, useState } from "react";
+import { ArrowRight, CalendarDays, Check, Clock3, Leaf, MapPin, Menu, Minus, Plus, ShoppingBag, Sparkles, Star, Utensils, X } from "lucide-react";
 
-const featured = [
-  { name: "Kurinji Millet Thali", note: "Seasonal millet spread · 12 dishes", price: "₹1,250" },
-  { name: "Forest Pepper Pongal", note: "Native pepper · ghee-roasted cashews", price: "₹420" },
-  { name: "Nilgiri Mango Payasam", note: "Alphonso · coconut cream · cardamom", price: "₹360" },
-];
+const dishes=[
+{id:"MI-0001",name:"Kurinji Millet Thali",cat:"Tasting & Thali",price:1250,note:"Seasonal millet spread · 12 dishes",img:"/images/dish-thali.svg",tag:"Chef's table"},
+{id:"MI-0002",name:"Forest Pepper Pongal",cat:"Tiffin",price:420,note:"Native pepper · cashew · ghee",img:"/images/dish-pongal.svg",tag:"Signature"},
+{id:"MI-0003",name:"Wild Pepper Millet Dosa",cat:"Dosa & Adai",price:460,note:"Fermented millet · pepper podi · coconut",img:"/images/dish-dosa.svg",tag:"Popular"},
+{id:"MI-0004",name:"Pepper Leaf Chicken",cat:"Mains",price:690,note:"Black pepper · curry leaf · charred lemon",img:"/images/dish-chicken.svg",tag:"Fire grill"},
+{id:"MI-0005",name:"Coconut Coast Fish Curry",cat:"Coastal",price:760,note:"Seasonal catch · coconut · tamarind",img:"/images/dish-fish.svg",tag:"Seasonal"},
+{id:"MI-0006",name:"Smoked Pumpkin Kootu",cat:"Vegetarian",price:390,note:"Ooty pumpkin · moong dal · smoked spice",img:"/images/dish-pumpkin.svg",tag:"Vegetarian"},
+{id:"MI-0007",name:"Nilgiri Mango Payasam",cat:"Desserts",price:360,note:"Mango · coconut cream · cardamom",img:"/images/dish-payasam.svg",tag:"Dessert"},
+{id:"MI-0008",name:"Ooty Wild Herb Rasam",cat:"Accompaniments",price:290,note:"Tomato · estate herbs · crushed pepper",img:"/images/dish-rasam.svg",tag:"Warm bowl"},
+{id:"MI-0009",name:"Kambu Heritage Porridge",cat:"Morning",price:280,note:"Pearl millet · coconut cream",img:"/images/dish-porridge.svg",tag:"Breakfast"},
+{id:"MI-0010",name:"Kurinji Garden Fizz",cat:"Drinks",price:240,note:"Tender coconut · wild herb · lime",img:"/images/drink-fizz.svg",tag:"Zero proof"}];
+const cats=["All","Tasting & Thali","Tiffin","Dosa & Adai","Mains","Coastal","Vegetarian","Desserts","Drinks"];
+const gallery=[
+["/images/mahistra-hills.svg","The approach","Misty evenings above Ooty"],
+["/images/mahistra-glasshouse.svg","The glasshouse","Warm light after the rain"],
+["/images/mahistra-dining.svg","The dining room","Quiet tables, botanical textures"],
+["/images/mahistra-kitchen.svg","The kitchen","Fire, spice and slow craft"]];
+const steps=[
+["Fermentation","Millet and lentils rest slowly overnight for a light, aromatic batter."],
+["Tadka","Estate black pepper, curry leaf and cumin meet hot ghee for the finishing aroma."],
+["Fire","Each plate is finished over flame or charcoal ember to build depth without heaviness."]];
 
-export default function Home() {
-  return (
-    <main>
-      <section className="hero">
-        <div className="heroGlow" />
-        <nav className="nav">
-          <a className="brand" href="/">MAHISTRA</a>
-          <div className="navLinks">
-            <a href="#experience">Experience</a>
-            <a href="#menu">Menu</a>
-            <a href="#story">Our story</a>
-            <a href="#contact">Visit</a>
-          </div>
-          <a className="reserve" href="#reservation">Reserve a table <ArrowRight size={15} /></a>
-        </nav>
-
-        <div className="heroContent">
-          <div className="eyebrow"><Leaf size={15} /> Ooty · Tamil Nadu</div>
-          <h1>Where the hills<br /><em>meet the table.</em></h1>
-          <p>
-            A quiet, modern expression of South Indian cooking, shaped by misty mornings,
-            mountain produce, and recipes worth remembering.
-          </p>
-          <div className="heroActions">
-            <a className="primaryBtn" href="#menu">Explore the menu <ArrowRight size={16} /></a>
-            <a className="ghostBtn" href="#reservation">Book an evening</a>
-          </div>
-        </div>
-
-        <div className="heroMeta">
-          <span>01 / 03</span>
-          <span className="line" />
-          <span>Nature · Fire · Memory</span>
-        </div>
-      </section>
-
-      <section id="experience" className="intro section">
-        <div className="sectionKicker"><Sparkles size={14} /> THE MAHISTRA EXPERIENCE</div>
-        <div className="introGrid">
-          <h2>A table inspired<br />by the <em>Nilgiris.</em></h2>
-          <div>
-            <p className="lead">
-              Mahistra is imagined as a destination dining room in Ooty — intimate, warm,
-              and deeply rooted in South Indian ingredients.
-            </p>
-            <div className="miniStats">
-              <div><strong>12</strong><span>course tasting</span></div>
-              <div><strong>48</strong><span>seat dining room</span></div>
-              <div><strong>04</strong><span>seasonal menus</span></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="menu" className="menu section">
-        <div className="sectionHead">
-          <div>
-            <div className="sectionKicker"><Utensils size={14} /> FROM THE KITCHEN</div>
-            <h2>Signature <em>plates.</em></h2>
-          </div>
-          <a href="#full-menu" className="textLink">View all dishes <ArrowRight size={15} /></a>
-        </div>
-        <div className="dishGrid">
-          {featured.map((dish, i) => (
-            <article className="dishCard" key={dish.name}>
-              <div className={"dishImage dish" + (i + 1)}><span>0{i + 1}</span></div>
-              <div className="dishCopy">
-                <div><h3>{dish.name}</h3><p>{dish.note}</p></div>
-                <strong>{dish.price}</strong>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section id="story" className="story section">
-        <div className="storyVisual">
-          <div className="storyCircle">M</div>
-          <span>Crafted slowly.<br />Served warmly.</span>
-        </div>
-        <div className="storyCopy">
-          <div className="sectionKicker"><Leaf size={14} /> OUR STORY</div>
-          <h2>Not a restaurant.<br /><em>A sense of place.</em></h2>
-          <p>
-            From native millets and estate vegetables to wood-smoked spices, every dish
-            is designed to feel unmistakably of the hills.
-          </p>
-          <a href="#reservation" className="textLink">Discover Mahistra <ArrowRight size={15} /></a>
-        </div>
-      </section>
-
-      <section id="reservation" className="reservation section">
-        <div className="reservationPanel">
-          <div>
-            <div className="sectionKicker"><CalendarDays size={14} /> RESERVATIONS</div>
-            <h2>Your evening<br /><em>starts here.</em></h2>
-            <p>Friday–Sunday · 6:30 PM–10:30 PM<br />Limited seating · Reservations recommended</p>
-          </div>
-          <div className="bookingCard">
-            <div className="bookingRow"><span>Guests</span><b>2 people</b></div>
-            <div className="bookingRow"><span>Date</span><b>Choose a date</b></div>
-            <div className="bookingRow"><span>Time</span><b>7:30 PM</b></div>
-            <button>Find a table <ArrowRight size={16} /></button>
-          </div>
-        </div>
-      </section>
-
-      <footer id="contact" className="footer">
-        <div>
-          <a className="brand" href="/">MAHISTRA</a>
-          <p>Premium South Indian dining<br />in the Nilgiris.</p>
-        </div>
-        <div className="footerInfo">
-          <div><MapPin size={15} /> Ooty, Tamil Nadu, India</div>
-          <div>Open Friday–Sunday evenings</div>
-        </div>
-        <span className="footerMark">© 2026 MAHISTRA</span>
-      </footer>
-    </main>
-  );
+export default function Home(){
+ const [activeCat,setActiveCat]=useState("All"),[search,setSearch]=useState(""),[cart,setCart]=useState<Record<string,number>>({}),[modal,setModal]=useState(false),[booked,setBooked]=useState(false),[menuOpen,setMenuOpen]=useState(false);
+ const filtered=useMemo(()=>dishes.filter(d=>(activeCat==="All"||d.cat===activeCat)&&d.name.toLowerCase().includes(search.toLowerCase())),[activeCat,search]);
+ const cartCount=Object.values(cart).reduce((a,b)=>a+b,0),cartTotal=Object.entries(cart).reduce((s,[id,q])=>s+(dishes.find(d=>d.id===id)?.price||0)*q,0);
+ const add=(id:string)=>setCart(c=>({...c,[id]:(c[id]||0)+1}));
+ const remove=(id:string)=>setCart(c=>{const n={...c};n[id]=(n[id]||0)-1;if(n[id]<=0)delete n[id];return n;});
+ return <main className="site">
+  <header className="topbar"><a className="brand" href="#">MAHISTRA <span>OOTY</span></a><button className="mobileToggle" onClick={()=>setMenuOpen(v=>!v)}>{menuOpen?<X/>:<Menu/>}</button>
+   <nav className={menuOpen?"navLinks open":"navLinks"}><a href="#experience">Experience</a><a href="#menu">Menu</a><a href="#story">Story</a><a href="#gallery">Gallery</a><a href="#events">Events</a></nav>
+   <button className="cartButton" onClick={()=>setModal(true)}><ShoppingBag size={16}/>{cartCount?cartCount:"Cart"}{cartCount>0&&<b>₹{cartTotal.toLocaleString("en-IN")}</b>}</button>
+  </header>
+  <section className="hero"><div className="heroImage"/><div className="heroShade"/><div className="heroInner"><div className="eyebrow"><Leaf size={14}/> A FICTIONAL DESTINATION DINING HOUSE · OOTY</div><h1>The hills,<br/><em>served slowly.</em></h1><p>Mahistra is a premium South Indian dining experience imagined high in the Nilgiris — where mist, fire and familiar flavours become something new.</p><div className="heroActions"><a className="goldBtn" href="#menu">Explore the menu <ArrowRight size={16}/></a><button className="lineBtn" onClick={()=>setModal(true)}>Reserve your evening</button></div><div className="heroFacts"><span><Clock3 size={14}/> Fri–Sun · 6:30–10:30</span><span><MapPin size={14}/> Ooty · Tamil Nadu</span><span><Sparkles size={14}/> Premium South Indian</span></div></div><div className="heroBadge"><span>01</span><small>OF</small><span>07</span></div></section>
+  <section id="experience" className="experience section"><div className="sectionLabel"><Sparkles size={14}/> THE MAHISTRA EXPERIENCE</div><div className="split"><div><h2>A table shaped<br/>by the <em>Nilgiris.</em></h2></div><div><p className="lead">A calm, intimate dining house built around seasonal produce, heirloom techniques and the smell of pepper in a cool mountain kitchen.</p><div className="metrics"><div><b>48</b><span>seats</span></div><div><b>04</b><span>seasonal menus</span></div><div><b>12</b><span>course tasting</span></div></div></div></div></section>
+  <section id="menu" className="menuSection section"><div className="sectionTop"><div><div className="sectionLabel"><Utensils size={14}/> FROM THE KITCHEN</div><h2>Plates with a <em>point of view.</em></h2></div><div className="menuTools"><input aria-label="Search dishes" placeholder="Search the menu..." value={search} onChange={e=>setSearch(e.target.value)}/><span className="cartHint"><ShoppingBag size={14}/> {cartCount} in cart</span></div></div><div className="catRow">{cats.map(c=><button key={c} className={activeCat===c?"active":""} onClick={()=>setActiveCat(c)}>{c}</button>)}</div><div className="dishGrid">{filtered.map((d,i)=><article className="dishCard" key={d.id}><div className="dishVisual"><img src={d.img} alt={d.name}/><span className="dishNo">0{i+1}</span><span className="tag">{d.tag}</span></div><div className="dishBody"><div><h3>{d.name}</h3><p>{d.note}</p><small>{d.cat}</small></div><div className="dishBottom"><b>₹{d.price.toLocaleString("en-IN")}</b><button onClick={()=>add(d.id)}><Plus size={15}/> Add</button></div></div></article>)}</div></section>
+  <section className="recipeSection section"><div className="recipeImage"><img src="/images/mahistra-kitchen.svg" alt="Mahistra kitchen"/></div><div className="recipeCopy"><div className="sectionLabel"><Leaf size={14}/> THE CRAFT</div><h2>Recipes begin<br/>long before <em>service.</em></h2><p>Mahistra treats recipes like living systems: grain, fire, fermentation and memory. Every component has a job.</p><div className="steps">{steps.map(([n,t],i)=><div className="step" key={n}><span>0{i+1}</span><div><b>{n}</b><p>{t}</p></div></div>)}</div></div></section>
+  <section id="story" className="storySection"><div className="storyText"><div className="sectionLabel"><Leaf size={14}/> OUR STORY</div><h2>Not a restaurant.<br/><em>A sense of place.</em></h2><p>From Kurinji-inspired botanicals to wood-smoked spices, Mahistra is imagined as a place where the landscape changes the way a meal feels.</p><button className="lightBtn" onClick={()=>document.getElementById("gallery")?.scrollIntoView({behavior:"smooth"})}>See the house <ArrowRight size={16}/></button></div><div className="storyArt"><img src="/images/mahistra-dining.svg" alt="Mahistra dining room"/></div></section>
+  <section id="gallery" className="gallerySection section"><div className="sectionLabel"><Sparkles size={14}/> INSIDE MAHISTRA</div><div className="galleryHead"><h2>A house in the <em>mist.</em></h2><p>Original fictional visuals created for the Mahistra concept.</p></div><div className="galleryGrid">{gallery.map(([img,t,s])=><div className="galleryCard" key={img}><img src={img} alt={t}/><div><b>{t}</b><span>{s}</span></div></div>)}</div></section>
+  <section id="events" className="eventsSection section"><div><div className="sectionLabel"><CalendarDays size={14}/> THE CALENDAR</div><h2>Evenings worth<br/><em>making plans for.</em></h2></div><div className="eventList"><div><span>18 OCT</span><b>Harvest Table — Nilgiri Edition</b><small>Seven-course seasonal dinner · 7:30 PM</small></div><div><span>02 NOV</span><b>Tea Garden Supper</b><small>Estate teas, coastal spice & fire · 7:00 PM</small></div><div><span>21 DEC</span><b>Winter Solstice at Mahistra</b><small>Long-table tasting · 8:00 PM</small></div></div></section>
+  <section id="reservation" className="reservationSection"><div className="reservationPanel"><div><div className="sectionLabel"><CalendarDays size={14}/> RESERVATIONS</div><h2>Your evening<br/><em>starts here.</em></h2><p>Friday–Sunday · 6:30 PM–10:30 PM<br/>Reservations are recommended. Walk-ins are welcomed when space allows.</p></div><div className="bookingCard"><label>Guests<select defaultValue="2"><option>2 people</option><option>3 people</option><option>4 people</option><option>6 people</option></select></label><label>Date<input type="date" defaultValue="2026-10-18"/></label><label>Time<select defaultValue="19:30"><option value="18:30">6:30 PM</option><option value="19:30">7:30 PM</option><option value="20:30">8:30 PM</option><option value="21:30">9:30 PM</option></select></label><button onClick={()=>setBooked(true)}>{booked?<><Check size={16}/> Table requested</>:<>Find a table <ArrowRight size={16}/></>}</button></div></div></section>
+  <footer className="footer" id="contact"><div><a className="brand" href="#">MAHISTRA <span>OOTY</span></a><p>Premium South Indian dining<br/>in the Nilgiris.</p></div><div className="footerCols"><div><b>VISIT</b><span>Ooty, Tamil Nadu</span><span>Fictional address · Nilgiris</span></div><div><b>HOURS</b><span>Friday–Sunday</span><span>6:30 PM–10:30 PM</span></div><div><b>CONTACT</b><span>hello@mahistra.test</span><span>+91 00000 00000</span></div></div><div className="footerBottom">© 2026 MAHISTRA · Fictional concept website</div></footer>
+  {modal&&<div className="modalBack" onClick={()=>setModal(false)}><div className="modal" onClick={e=>e.stopPropagation()}><button className="modalClose" onClick={()=>setModal(false)}><X/></button><div className="sectionLabel"><ShoppingBag size={14}/> YOUR TABLE & CART</div><h3>{cartCount?cartCount+" item"+(cartCount>1?"s":"")+" selected":"Ready for the evening?"}</h3>{cartCount?<div className="modalCart">{Object.entries(cart).map(([id,q])=>{const d=dishes.find(x=>x.id===id)!;return <div className="cartLine" key={id}><span>{d.name}<small>₹{d.price.toLocaleString("en-IN")} each</small></span><div><button onClick={()=>remove(id)}><Minus size={13}/></button><b>{q}</b><button onClick={()=>add(id)}><Plus size={13}/></button></div></div>})}</div>:<p>Pick a few signature plates from the menu, then confirm your reservation. This demo uses local state only — no real payment is processed.</p>}<div className="modalTotal"><span>Total</span><b>₹{cartTotal.toLocaleString("en-IN")}</b></div><button className="goldBtn wide" onClick={()=>{setModal(false);document.getElementById("reservation")?.scrollIntoView({behavior:"smooth"})}}>Continue to reservation <ArrowRight size={16}/></button></div></div>}
+ </main>;
 }

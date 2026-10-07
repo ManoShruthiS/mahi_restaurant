@@ -1,11 +1,11 @@
 [
-{"gallery_id":"GAL-000001","title":"Mist over the estate","category":"Exterior","image":"/images/mahistra-hills.svg","caption":"Fictional hilltop setting for Mahistra"},
-{"gallery_id":"GAL-000002","title":"The glasshouse","category":"Interior","image":"/images/mahistra-glasshouse.svg","caption":"Warm botanical dining room"},
-{"gallery_id":"GAL-000003","title":"Dining room","category":"Interior","image":"/images/mahistra-dining.svg","caption":"Evening tables and antique-gold details"},
-{"gallery_id":"GAL-000004","title":"Kitchen fire","category":"Kitchen","image":"/images/mahistra-kitchen.svg","caption":"Open-kitchen craft and spice"},
-{"gallery_id":"GAL-000005","title":"Kurinji Millet Thali","category":"Food","image":"/images/dish-thali.svg","caption":"Seasonal millet tasting platter"},
-{"gallery_id":"GAL-000006","title":"Forest Pepper Pongal","category":"Food","image":"/images/dish-pongal.svg","caption":"Pepper-forward comfort bowl"},
-{"gallery_id":"GAL-000007","title":"Wild Pepper Millet Dosa","category":"Food","image":"/images/dish-dosa.svg","caption":"Fermented millet dosa"},
-{"gallery_id":"GAL-000008","title":"Pepper Leaf Chicken","category":"Food","image":"/images/dish-chicken.svg","caption":"Charred pepper and curry leaf"},
-{"gallery_id":"GAL-000009","title":"Nilgiri Mango Payasam","category":"Food","image":"/images/dish-payasam.svg","caption":"Mango and coconut dessert"}
+{"gallery_id":"GAL-000001","title":"Mist over the estate","category":"Exterior","image":"/images/mahistra-hills.png","caption":"Fictional hilltop setting for Mahistra"},
+{"gallery_id":"GAL-000002","title":"The glasshouse","category":"Interior","image":"/images/mahistra-glasshouse.png","caption":"Warm botanical dining room"},
+{"gallery_id":"GAL-000003","title":"Dining room","category":"Interior","image":"/images/mahistra-dining.png","caption":"Evening tables and antique-gold details"},
+{"gallery_id":"GAL-000004","title":"Kitchen fire","category":"Kitchen","image":"/images/mahistra-kitchen.png","caption":"Open-kitchen craft and spice"},
+{"gallery_id":"GAL-000005","title":"Kurinji Millet Thali","category":"Food","image":"/images/dish-thali.png","caption":"Seasonal millet tasting platter"},
+{"gallery_id":"GAL-000006","title":"Forest Pepper Pongal","category":"Food","image":"/images/dish-pongal.png","caption":"Pepper-forward comfort bowl"},
+{"gallery_id":"GAL-000007","title":"Wild Pepper Millet Dosa","category":"Food","image":"/images/dish-dosa.png","caption":"Fermented millet dosa"},
+{"gallery_id":"GAL-000008","title":"Pepper Leaf Chicken","category":"Food","image":"/images/dish-chicken.png","caption":"Charred pepper and curry leaf"},
+{"gallery_id":"GAL-000009","title":"Nilgiri Mango Payasam","category":"Food","image":"/images/dish-payasam.png","caption":"Mango and coconut dessert"}
 ]

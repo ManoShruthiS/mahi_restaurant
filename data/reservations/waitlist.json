@@ -1,0 +1,5 @@
+[
+{"waitlist_id":"WAIT-000001","customer_id":"CUS-000007","requested_at":"2026-10-10T18:10:00+05:30","party_size":2,"estimated_wait_minutes":35,"status":"waiting"},
+{"waitlist_id":"WAIT-000002","customer_id":"CUS-000008","requested_at":"2026-10-11T19:05:00+05:30","party_size":4,"estimated_wait_minutes":55,"status":"seated"},
+{"waitlist_id":"WAIT-000003","customer_id":"CUS-000002","requested_at":"2026-10-12T20:15:00+05:30","party_size":2,"estimated_wait_minutes":25,"status":"cancelled"}
+]

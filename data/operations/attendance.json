@@ -1,0 +1,6 @@
+[
+{"attendance_id":"ATT-000001","staff_id":"STF-000001","attendance_date":"2026-10-10","check_in":"14:57","check_out":"23:07","status":"present"},
+{"attendance_id":"ATT-000002","staff_id":"STF-000004","attendance_date":"2026-10-10","check_in":"16:27","check_out":"23:03","status":"present"},
+{"attendance_id":"ATT-000003","staff_id":"STF-000005","attendance_date":"2026-10-10","check_in":"14:04","check_out":"23:32","status":"present"},
+{"attendance_id":"ATT-000004","staff_id":"STF-000006","attendance_date":"2026-10-11","check_in":null,"check_out":null,"status":"leave"}
+]

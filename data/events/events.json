@@ -1,0 +1,5 @@
+[
+{"event_id":"EVT-000001","name":"Kurinji Harvest Dinner","event_type":"tasting","start_at":"2026-10-16T19:00:00+05:30","end_at":"2026-10-16T22:00:00+05:30","capacity":40,"price_per_guest":3200,"status":"scheduled"},
+{"event_id":"EVT-000002","name":"Estate Coffee & Dessert Evening","event_type":"pairing","start_at":"2026-10-24T19:30:00+05:30","end_at":"2026-10-24T21:30:00+05:30","capacity":28,"price_per_guest":1400,"status":"scheduled"},
+{"event_id":"EVT-000003","name":"Nilgiri Spice Table","event_type":"chef_demo","start_at":"2026-11-07T19:00:00+05:30","end_at":"2026-11-07T21:30:00+05:30","capacity":24,"price_per_guest":1800,"status":"scheduled"}
+]

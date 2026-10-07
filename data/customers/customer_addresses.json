@@ -1,0 +1,6 @@
+[
+{"address_id":"ADDR-000001","customer_id":"CUST-000001","label":"Home","address_line1":"12 Pine View Road","address_line2":"Lovedale","city":"Ooty","state":"Tamil Nadu","postal_code":"643003","country":"India","is_default":true},
+{"address_id":"ADDR-000002","customer_id":"CUST-000002","label":"Office","address_line1":"24 Lake Road","address_line2":"Ooty Town","city":"Ooty","state":"Tamil Nadu","postal_code":"643001","country":"India","is_default":true},
+{"address_id":"ADDR-000003","customer_id":"CUST-000003","label":"Home","address_line1":"8 Tea Estate Lane","address_line2":"Coonoor Road","city":"Ooty","state":"Tamil Nadu","postal_code":"643002","country":"India","is_default":true},
+{"address_id":"ADDR-000004","customer_id":"CUST-000004","label":"Home","address_line1":"41 Fern Hill","address_line2":"Fingerpost","city":"Ooty","state":"Tamil Nadu","postal_code":"643006","country":"India","is_default":true}
+]

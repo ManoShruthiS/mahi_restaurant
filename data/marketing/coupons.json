@@ -1,0 +1,5 @@
+[
+{"coupon_id":"CPN-000001","code":"KURINJI250","offer_id":"OFF-000001","minimum_order_value":1800,"redemption_limit":500,"used_count":82,"status":"active"},
+{"coupon_id":"CPN-000002","code":"OOTY10","offer_id":"OFF-000002","minimum_order_value":2500,"redemption_limit":300,"used_count":34,"status":"active"},
+{"coupon_id":"CPN-000003","code":"WELCOME8","offer_id":"OFF-000003","minimum_order_value":800,"redemption_limit":1000,"used_count":119,"status":"active"}
+]

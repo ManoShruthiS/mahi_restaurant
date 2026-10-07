@@ -1,0 +1,7 @@
+[
+{"loyalty_transaction_id":"LYT-000001","loyalty_account_id":"LOY-000001","customer_id":"CUS-000001","order_id":"ORD-000001","transaction_type":"earn","points":211,"balance_after":1480,"transaction_at":"2026-10-10T20:06:00+05:30"},
+{"loyalty_transaction_id":"LYT-000002","loyalty_account_id":"LOY-000002","customer_id":"CUS-000002","order_id":"ORD-000004","transaction_type":"earn","points":106,"balance_after":610,"transaction_at":"2026-10-11T18:56:00+05:30"},
+{"loyalty_transaction_id":"LYT-000003","loyalty_account_id":"LOY-000003","customer_id":"CUS-000003","order_id":"ORD-000002","transaction_type":"earn","points":161,"balance_after":3240,"transaction_at":"2026-10-10T20:51:00+05:30"},
+{"loyalty_transaction_id":"LYT-000004","loyalty_account_id":"LOY-000001","customer_id":"CUS-000001","order_id":null,"transaction_type":"redeem","points":200,"balance_after":1280,"transaction_at":"2026-10-03T19:12:00+05:30"},
+{"loyalty_transaction_id":"LYT-000005","loyalty_account_id":"LOY-000003","customer_id":"CUS-000003","order_id":null,"transaction_type":"adjust","points":100,"balance_after":3340,"transaction_at":"2026-10-05T10:00:00+05:30"}
+]

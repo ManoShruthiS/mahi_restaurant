@@ -1,0 +1,3 @@
+[
+{"role_id":"ROLE-00001","role_name":"Executive Chef","department":"Kitchen"},{"role_id":"ROLE-00002","role_name":"Sous Chef","department":"Kitchen"},{"role_id":"ROLE-00003","role_name":"Line Chef","department":"Kitchen"},{"role_id":"ROLE-00004","role_name":"Pastry Chef","department":"Kitchen"},{"role_id":"ROLE-00005","role_name":"Server","department":"Front of House"},{"role_id":"ROLE-00006","role_name":"Host","department":"Front of House"},{"role_id":"ROLE-00007","role_name":"Manager","department":"Management"},{"role_id":"ROLE-00008","role_name":"Cashier","department":"Finance"},{"role_id":"ROLE-00009","role_name":"Inventory Specialist","department":"Operations"},{"role_id":"ROLE-00010","role_name":"Delivery Associate","department":"Delivery"}
+]

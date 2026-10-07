@@ -1,0 +1,10 @@
+[
+{"staff_id":"STF-000001","role_id":"ROLE-00001","first_name":"Dev","last_name":"Raghavan","hire_date":"2024-05-12","employment_status":"active","shift_preference":"Evening"},
+{"staff_id":"STF-000002","role_id":"ROLE-00002","first_name":"Nila","last_name":"Varma","hire_date":"2025-01-08","employment_status":"active","shift_preference":"Evening"},
+{"staff_id":"STF-000003","role_id":"ROLE-00003","first_name":"Kiran","last_name":"Das","hire_date":"2025-06-17","employment_status":"active","shift_preference":"Evening"},
+{"staff_id":"STF-000004","role_id":"ROLE-00005","first_name":"Asha","last_name":"Mohan","hire_date":"2025-09-03","employment_status":"active","shift_preference":"Evening"},
+{"staff_id":"STF-000005","role_id":"ROLE-00007","first_name":"Vikram","last_name":"Iyer","hire_date":"2024-10-21","employment_status":"active","shift_preference":"Evening"},
+{"staff_id":"STF-000006","role_id":"ROLE-00009","first_name":"Ritu","last_name":"Sundar","hire_date":"2026-02-02","employment_status":"active","shift_preference":"Morning"},
+{"staff_id":"STF-000007","role_id":"ROLE-00004","first_name":"Maya","last_name":"Joseph","hire_date":"2025-11-15","employment_status":"active","shift_preference":"Evening"},
+{"staff_id":"STF-000008","role_id":"ROLE-00006","first_name":"Arvind","last_name":"Kumar","hire_date":"2026-01-14","employment_status":"active","shift_preference":"Evening"}
+]

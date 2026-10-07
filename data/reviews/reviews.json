@@ -1,0 +1,8 @@
+[
+{"review_id":"REV-000001","customer_id":"CUS-000001","menu_item_id":"DISH-000001","rating":5,"review_title":"Beautiful tasting experience","review_text":"The millet spread felt thoughtful and beautifully paced.","review_at":"2026-09-20T21:15:00+05:30","sentiment":"positive"},
+{"review_id":"REV-000002","customer_id":"CUS-000003","menu_item_id":"DISH-000003","rating":5,"review_title":"Delicate dessert","review_text":"Bright, fragrant and not overly sweet.","review_at":"2026-09-22T20:20:00+05:30","sentiment":"positive"},
+{"review_id":"REV-000003","customer_id":"CUS-000002","menu_item_id":"DISH-000006","rating":4,"review_title":"Excellent pepper","review_text":"Deep pepper character and tender chicken.","review_at":"2026-09-25T20:42:00+05:30","sentiment":"positive"},
+{"review_id":"REV-000004","customer_id":"CUS-000005","menu_item_id":"DISH-000004","rating":3,"review_title":"Good but slow","review_text":"The dosa was excellent, though the wait was longer than expected.","review_at":"2026-09-28T19:12:00+05:30","sentiment":"neutral"},
+{"review_id":"REV-000005","customer_id":"CUS-000004","menu_item_id":"DISH-000007","rating":2,"review_title":"Too spicy","review_text":"The flavor was good but the spice level overwhelmed the dish.","review_at":"2026-10-01T20:02:00+05:30","sentiment":"negative"},
+{"review_id":"REV-000006","customer_id":"CUS-000007","menu_item_id":"DISH-000008","rating":5,"review_title":"Wonderful mocktail","review_text":"Fresh, herbal and perfect before dinner.","review_at":"2026-10-02T18:48:00+05:30","sentiment":"positive"}
+]

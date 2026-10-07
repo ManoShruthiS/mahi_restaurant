@@ -1,0 +1,6 @@
+[
+{"shift_id":"SHIFT-000001","staff_id":"STF-000001","shift_date":"2026-10-10","start_time":"15:00","end_time":"23:00","role":"Executive Chef","status":"scheduled"},
+{"shift_id":"SHIFT-000002","staff_id":"STF-000004","shift_date":"2026-10-10","start_time":"16:30","end_time":"23:00","role":"Server","status":"completed"},
+{"shift_id":"SHIFT-000003","staff_id":"STF-000005","shift_date":"2026-10-10","start_time":"14:00","end_time":"23:30","role":"Manager","status":"completed"},
+{"shift_id":"SHIFT-000004","staff_id":"STF-000006","shift_date":"2026-10-11","start_time":"08:00","end_time":"16:00","role":"Inventory Specialist","status":"completed"}
+]
